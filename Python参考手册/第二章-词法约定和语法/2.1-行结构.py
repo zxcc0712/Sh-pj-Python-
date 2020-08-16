@@ -6,3 +6,5 @@ if a :
     statement2
 else:
     statement3
+
+class
