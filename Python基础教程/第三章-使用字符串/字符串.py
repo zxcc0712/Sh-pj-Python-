@@ -21,9 +21,11 @@ width = int(input('Please enter width:'))
 
 price_width = 10
 item_width = width-price_width
-
+#要在最终结果中包含花括号，可在格式字符串中使用两个花括号来指定
 header_fmt = '{{:{}}}{{:>{}}}'.format(item_width,price_width)
+print(header_fmt)
 fmt        = '{{:{}}}{{:>{}.2f}}'.format(item_width,price_width)
+print(fmt)
 print('='*width)
 
 print(header_fmt.format('Item','Price'))
