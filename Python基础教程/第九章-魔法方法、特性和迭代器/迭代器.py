@@ -6,10 +6,11 @@ class Fibs:
         self.b = 1
     def __next__(self):
         self.a,self.b = self.b,self.a+self.b
+        return self.a
     def __iter__(self):
         return self
 fibs = Fibs()
 for f in fibs:
-    if f > 10:
+    if f > 10000:
         print(f)
         break
