@@ -13,3 +13,15 @@ r = Rectangle()
 r.width = 3
 r.height = 5
 print(r.size)
+
+# 静态方法和类方法（使用场景还没有具体找到）
+class MyClass:
+    # 静态方法
+    @staticmethod
+    def smeth():
+        print('This is a static method')
+
+    # 类方法
+    @classmethod
+    def cmeth(cls):
+        print('This is a class method of',cls)
