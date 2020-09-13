@@ -1,0 +1,27 @@
+Index: Python基础教程/第九章-魔法方法、特性和迭代器/特性.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>class Rectangle:\r\n    def __init__(self):\r\n        self.width = 0\r\n        self.height = 0\r\n    def set_size(self,size):\r\n        self.width,self.height = size\r\n    def get_size(self):\r\n        return self.width,self.height\r\n    # 函数property\r\n    size = property(get_size,set_size)\r\n\r\nr = Rectangle()\r\nr.width = 3\r\nr.height = 5\r\nprint(r.size)
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Python基础教程/第九章-魔法方法、特性和迭代器/特性.py	(revision 0c22b14a3326b1aa4e18d8d1e87d3af7f3319db6)
++++ Python基础教程/第九章-魔法方法、特性和迭代器/特性.py	(date 1599999128340)
+@@ -6,10 +6,13 @@
+         self.width,self.height = size
+     def get_size(self):
+         return self.width,self.height
+-    # 函数property
++    # 函数property,(获取方法在前，设置方法在后)
+     size = property(get_size,set_size)
+ 
+ r = Rectangle()
+ r.width = 3
+ r.height = 5
+-print(r.size)
+\ No newline at end of file
++print(r.size)
++
++
++静态方法和
+\ No newline at end of file
