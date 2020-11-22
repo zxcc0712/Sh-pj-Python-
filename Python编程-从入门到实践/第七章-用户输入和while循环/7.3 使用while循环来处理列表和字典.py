@@ -1,3 +1,4 @@
+#在列表之间移动元素，利用pop()函数
 unconfirmed_users = ['qwe','wasd','eghjk','rasd','tkjhg','yerf','uvvf']
 confirmed_users = []
 
