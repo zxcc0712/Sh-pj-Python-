@@ -112,7 +112,7 @@ def get_number_rows(ai_settings,ship_height,alien_height):
 def check_fleet_edges(ai_settings,aliens):
     '''有外星人到达边缘时采取相应的措施'''
     for alien in aliens.sprites():
-        if alien.chect_edges():
+        if alien.check_edges():
             check_fleet_direction(ai_settings,aliens)
             break
 
@@ -136,9 +136,9 @@ def update_aliens(ai_settings,stats,screen,ship,aliens,bullets):
 
 def ship_hit(ai_settings,stats,screen,ship,aliens,bullets):
     '''响应被外星人撞到的飞船'''
-    if stats.ship_left > 0:
+    if stats.ships_left > 0:
         # 将ships_left减1
-        stats.ship_left -= 1
+        stats.ships_left -= 1
 
         # 清空外星人列表和子弹列表
         aliens.empty()

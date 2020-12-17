@@ -30,7 +30,7 @@ class Alien(Sprite):
         self.x += (self.ai_settings.alien_speed_factor * self.ai_settings.fleet_direction)
         self.rect.x = self.x
 
-    def chect_edges(self):
+    def check_edges(self):
         '''如果外星人位于屏幕边缘，就返回True'''
         screen_rect = self.screen.get_rect()
         if self.rect.right >= screen_rect.right:
