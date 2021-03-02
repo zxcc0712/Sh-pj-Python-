@@ -7,8 +7,8 @@
       <sourceFolder url="file://$MODULE_DIR$/Python编程-从入门到实践/项目一、 武装飞船" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Python编程-从入门到实践/项目二、数据可视化" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Python练习【知乎】/知网爬虫" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Python编程-从入门到实践/Web应用程序/learning_log/learning_logs" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/Python编程-从入门到实践/Web应用程序" />
+      <excludeFolder url="file://$MODULE_DIR$/Python编程-从入门到实践/Web应用程序/learning_log/learning_logs" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.8" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
