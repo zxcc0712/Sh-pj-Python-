@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # 我的应用程序
     'learning_logs',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -56,7 +57,9 @@ ROOT_URLCONF = 'learning_log.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'learning_logs/templates/learning_logs')],
+        #os.path.join(BASE_DIR, 'templates')没了这句，
+        # 会显示django.template.exceptions.TemplateDoesNotExist: index.html
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
