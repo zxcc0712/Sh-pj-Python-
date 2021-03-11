@@ -57,7 +57,8 @@ ROOT_URLCONF = 'learning_log.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'learning_logs/templates/learning_logs')],
+        'DIRS': [os.path.join(BASE_DIR, 'learning_logs/templates/learning_logs',
+                 'users/templates/users'),],
         #os.path.join(BASE_DIR, 'templates')没了这句，
         # 会显示django.template.exceptions.TemplateDoesNotExist: index.html
         'APP_DIRS': True,
@@ -123,3 +124,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# 我的设置
+LOGIN_URL = '/users/login/'
