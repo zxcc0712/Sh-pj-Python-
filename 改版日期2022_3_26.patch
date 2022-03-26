@@ -1,0 +1,22 @@
+Index: .idea/Sh-pj-Python-.iml
+===================================================================
+--- .idea/Sh-pj-Python-.iml	(revision 2ad76c845079a01615dcbedefef5e4a79dcab7a4)
++++ .idea/python-learn.iml	(date 1648300498178)
+@@ -1,0 +1,0 @@
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/modules.xml	(revision 2ad76c845079a01615dcbedefef5e4a79dcab7a4)
++++ .idea/modules.xml	(date 1648301287559)
+@@ -2,7 +2,7 @@
+ <project version="4">
+   <component name="ProjectModuleManager">
+     <modules>
+-      <module fileurl="file://$PROJECT_DIR$/.idea/Sh-pj-Python-.iml" filepath="$PROJECT_DIR$/.idea/Sh-pj-Python-.iml" />
++      <module fileurl="file://$PROJECT_DIR$/.idea/python-learn.iml" filepath="$PROJECT_DIR$/.idea/python-learn.iml" />
+     </modules>
+   </component>
+ </project>
+\ No newline at end of file
